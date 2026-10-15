@@ -334,6 +334,7 @@ const GID_PLIEGO = "2101127377";
    ----------------
 
    A = 0
+   B = 1
    C = 2
    D = 3
    E = 4
@@ -344,7 +345,7 @@ const GID_PLIEGO = "2101127377";
 
 
 const COLUMNAS_ESTADO = [
-    0, 2, 3, 4, 12, 13, 14
+    0, 1, 2, 3, 4, 12, 13, 14
 ];
 
 
@@ -381,6 +382,7 @@ const COLUMNAS_CANTIDAD = [
 
 const ENCABEZADOS_ESTADO = [
     "EMPRESA",
+    "ZONA"
     "DETALLE",
     "FECHA ÚLT. ENTREGA",
     "FECHA DEVOLUCIÓN",
@@ -571,7 +573,7 @@ async function cargarDatos() {
         const filas = json.table.rows;
 
         const columnasNecesarias = [
-            0, 2, 3, 4, 5, 6, 7,
+            0, 1, 2, 3, 4, 5, 6, 7,
             8, 9, 10, 11, 12, 13, 14
         ];
 
